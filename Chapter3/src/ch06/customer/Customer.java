@@ -1,4 +1,4 @@
-package ch03;
+package ch06.customer;
 
 public class Customer {
 
@@ -7,8 +7,8 @@ public class Customer {
     protected String customerGrade;
 
 
-    int bonusPoint;
-    double bonusRatio;
+    protected int bonusPoint;
+    protected double bonusRatio;
 
     /*public Customer() {
         customerGrade = "SILVER";
@@ -32,9 +32,10 @@ public class Customer {
         return price;
     }
 
-    public void showCustomerInfo() {
+    public boolean showCustomerInfo() {
         System.out.printf("%s님의 등급은 %s이며, 보너스 포인트는 %d입니다.\n", customerName, customerGrade, bonusPoint);
 
+        return false;
     }
 
     public int getCustomerID() {

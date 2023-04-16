@@ -1,4 +1,4 @@
-package ch03;
+package ch04;
 
 public class Customer {
 
@@ -7,8 +7,8 @@ public class Customer {
     protected String customerGrade;
 
 
-    int bonusPoint;
-    double bonusRatio;
+    protected int bonusPoint;
+    protected double bonusRatio;
 
     /*public Customer() {
         customerGrade = "SILVER";

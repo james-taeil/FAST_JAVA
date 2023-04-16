@@ -1,4 +1,4 @@
-package ch03;
+package ch06.customer;
 
 public class VIPCustomer extends Customer {
 
@@ -23,6 +23,13 @@ public class VIPCustomer extends Customer {
         salesRatio = 0.1;
 
         System.out.println("VIPCustomer(int, String) call");
+    }
+
+    @Override
+    public int calcPrice(int price) {
+        bonusPoint += price * bonusRatio;
+        price -= (int)(price * salesRatio);
+        return super.calcPrice(price);
     }
 
     public int getAgentID() {
