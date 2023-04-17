@@ -1,4 +1,4 @@
-package Boj;
+package Boj.b1157;
 
 import java.util.Arrays;
 import java.util.Scanner;
